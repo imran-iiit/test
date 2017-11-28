@@ -27,4 +27,4 @@ def maxprod_dp(n):
     return val[n]
 
 if __name__ == '__main__':
-    print maxprod_dp(10)
+    print(maxprod_dp(10))

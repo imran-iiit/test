@@ -26,6 +26,22 @@ def best_fit_slopt(xs, ys):
     m = ( mean(xs) * mean(ys) - mean(xs*ys) ) / ( mean(xs)**2 - mean(xs**2) )
     return m
 
+def squared_error(ys_orig, ys_line):
+    return sum((ys_line - ys_orig) ** 2 )
+
+def coeff_of_determination(ys_orig, ys_line):
+    '''
+        Coeff of Determination
+        r^2 = 1 - StandardError(hat(y))/StandardError(mean(y))
+        
+        If the line is very close to the mean line --> r^2 = 0 i.e. very good
+    '''
+    y_mean_line = mean(ys_orig) #[mean(ys_orig) for y in ys_orig]
+    squared_error_regr = squared_error(ys_orig, ys_line)
+    squared_error_y_mean = squared_error(ys_orig, y_mean_line)
+    
+    return 1 - squared_error_regr/squared_error_y_mean
+
 m = best_fit_slopt(xs, ys)
 print(m)
 
@@ -41,6 +57,9 @@ regression_line = [m*x+c for x in xs] # calculate the y values
 # Now, we can even predict the future!
 predict_x = 8
 predict_y = m * predict_x + c
+r_squared = coeff_of_determination(ys, regression_line)
+print(r_squared)
+
 plt.scatter(xs, ys)
 plt.scatter(predict_x, predict_y, color='g')
 plt.plot(xs, regression_line)

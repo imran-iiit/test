@@ -26,7 +26,7 @@ df = df[['Adj. Close', 'HL_PCT', 'PCT_change', 'Adj. Volume']]
 forecast_col = 'Adj. Close'
 df.fillna(-99999, inplace=True)
 
-forecast_out = int(math.ceil(0.01 * len(df)) ) 
+forecast_out = int(math.ceil(0.1 * len(df)) ) 
 print(forecast_out)
 
 df['label'] = df[forecast_col].shift(-forecast_out)
@@ -35,7 +35,10 @@ df['label'] = df[forecast_col].shift(-forecast_out)
 # print(df.head())
 # print(df.tail())
 
-X = np.array(df.drop(['label'], 1))
+# TEST: If we remove 'Adj. Close' from X (like 'label'), which is a price material column, 
+# the predicted values will be flat and not as expected
+# X = np.array(df.drop(['label', 'Adj. Close'], 1))
+X = np.array(df.drop(['label'], 1)) 
 X = preprocessing.scale(X)
 X_lately = X[-forecast_out:] # i.e. dont test on the data we dont have
 X = X[:-forecast_out]

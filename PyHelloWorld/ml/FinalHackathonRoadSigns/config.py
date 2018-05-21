@@ -1,6 +1,9 @@
 ############### Pytorch CIFAR configuration file ###############
 import math
 
+
+data_dir='Data/'
+
 start_epoch = 1
 num_epochs = 200
 batch_size = 128
@@ -35,5 +38,3 @@ def get_hms(seconds):
     h, m = divmod(m, 60)
 
     return h, m, s
-
-# print('Hello')

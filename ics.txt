@@ -1,0 +1,206 @@
+60-minutes-introduction-to-hypothesis-driven-software-development.ics
+a-practical-introduction-to-machine-learning.ics
+ai-driven-future-state-cloud-operations.ics
+algorithmic-risk-management-in-trading-and-investing.ics
+amazon-web-services-aws-managed-services.ics
+analyzing-software-architecture.ics
+apache-hadoop-spark-and-big-data-foundations.ics
+applied-cryptography-with-python.ics
+applied-probability-theory-for-everyone.ics
+applied-probability-theory-from-scratch.ics
+applying-monte-carlo-simulations-in-finance.ics
+architecture-by-example.ics
+artificial-intelligence-for-big-data.ics
+aws-certified-cloud-practitioner-exam-crash-course.ics
+aws-design-fundamentals.ics
+aws-machine-learning-specialty-certification-crash-course.ics
+basic-android-development (1).ics
+basic-android-development (2).ics
+basic-android-development.ics
+beginning-machine-learning-with-pytorch (1).ics
+beginning-machine-learning-with-pytorch.ics
+beginning-machine-learning-with-scikit-learn-2.ics
+beginning-machine-learning-with-scikit-learn.ics
+building-ai-ml-applications-on-google-cloud-platform.ics
+building-applications-with-apache-cassandra.ics
+building-intelligent-analytics-through-time-series-data.ics
+building-intelligent-bots-in-python.ics
+building-machine-learning-models-with-aws-sagemaker.ics
+business-data-analytics-using-python.ics
+business-fundamentals.ics
+chaos-engineering-planning-designing-and-running-automated-chaos-experiments.ics
+cleaning-data-at-scale (1).ics
+cleaning-data-at-scale (2).ics
+cleaning-data-at-scale-2.ics
+cleaning-data-at-scale.ics
+concurrency-in-python.ics
+container-revolution.ics
+core-statistics-for-data-science-in-r-and-python.ics
+data-engineering-for-data-scientists (1).ics
+data-engineering-for-data-scientists.ics
+debugging-data-science (1).ics
+debugging-data-science.ics
+deep-learning-with-tensorflow.ics
+deep-reinforcement-learning.ics
+deploying-machine-learning-models-to-production-a-toolkit-for-real-world-success.ics
+developing-a-data-science-project.ics
+devops-on-google-cloud-platform-gcp.ics
+docker-up-and-running (1).ics
+docker-up-and-running.ics
+essential-machine-learning-and-exploratory-data-analysis-with-python-and-jupyter-notebook.ics
+first-steps-in-data-analysis.ics
+foundational-data-science-with-r.ics
+foundational-python-for-data-science.ics
+fraud-analytics-using-python (1).ics
+fraud-analytics-using-python.ics
+fundamentals-of-ai-algorithms-in-90-minutes.ics
+fundamentals-of-financial-decision-making.ics
+fundamentals-of-machine-learning-with-aws.ics
+fundamentals-of-management (1).ics
+fundamentals-of-management.ics
+getting-started-with-amazon-web-services-aws.ics
+getting-started-with-cloud-computing.ics
+getting-started-with-pandas.ics
+getting-started-with-pyspark (1).ics
+getting-started-with-pyspark.ics
+getting-started-with-python-3 (1).ics
+getting-started-with-python-3.ics
+google-cloud-platform-data-engineering-certification-prep (1).ics
+google-cloud-platform-data-engineering-certification-prep.ics
+google-cloud-platform-professional-cloud-architect-certification-prep (1).ics
+google-cloud-platform-professional-cloud-architect-certification-prep.ics
+google-cloud-platform-professional-cloud-developer-crash-course.ics
+graphs-and-network-algorithms-from-scratch (1).ics
+graphs-and-network-algorithms-from-scratch.ics
+hands-on-adversarial-machine-learning (1).ics
+hands-on-adversarial-machine-learning-2.ics
+hands-on-adversarial-machine-learning.ics
+hands-on-algorithmic-trading-with-python (1).ics
+hands-on-algorithmic-trading-with-python (2).ics
+hands-on-algorithmic-trading-with-python.ics
+hands-on-deep-neural-networks-with-pytorch.ics
+hands-on-introduction-to-apache-hadoop-and-spark-programming.ics
+hands-on-with-google-cloud-automl.ics
+how-to-give-great-presentations.ics
+inferential-statistics-using-r (1).ics
+inferential-statistics-using-r (2).ics
+inferential-statistics-using-r.ics
+inside-unsupervised-learning-generative-models-and-recommender-systems.ics
+intense-introduction-to-hacking-web-applications.ics
+intermediate-git.ics
+intermediate-machine-learning-with-pytorch.ics
+intermediate-machine-learning-with-scikit-learn-2.ics
+intermediate-machine-learning-with-scikit-learn.ics
+intermediate-sql-for-data-analysis.ics
+intro-to-mathematical-optimization (1).ics
+intro-to-mathematical-optimization (2).ics
+intro-to-mathematical-optimization (3).ics
+intro-to-mathematical-optimization.ics
+introducing-machine-learning-with-amazon-sagemaker.ics
+introduction-to-ai-on-google-cloud (1).ics
+introduction-to-ai-on-google-cloud.ics
+introduction-to-algorithms-and-data-structures (1).ics
+introduction-to-algorithms-and-data-structures.ics
+introduction-to-docker-compose.ics
+introduction-to-docker-containers.ics
+introduction-to-encryption.ics
+introduction-to-google-cloud-platform (1).ics
+introduction-to-google-cloud-platform-2.ics
+introduction-to-google-cloud-platform.ics
+introduction-to-pandas.ics
+introduction-to-quantitative-financial-risk-management-with-r.ics
+introduction-to-statistics-for-data-analysis-with-python (1).ics
+introduction-to-statistics-for-data-analysis-with-python (2).ics
+introduction-to-statistics-for-data-analysis-with-python (3).ics
+introduction-to-statistics-for-data-analysis-with-python (4).ics
+introduction-to-statistics-for-data-analysis-with-python.ics
+java-8-generics-in-3-hours.ics
+kafka-fundamentals.ics
+kubernetes-in-3-hours.ics
+kubernetes-serverless-with-knative.ics
+learn-linux-in-3-hours.ics
+learning-mongodb-a-hands-on-guide.ics
+learning-python-3-by-example (1).ics
+learning-python-3-by-example.ics
+learning-regular-expressions (1).ics
+learning-regular-expressions.ics
+linear-algebra-with-python-essential-math-for-data-science (1).ics
+linear-algebra-with-python-essential-math-for-data-science.ics
+linear-regression-with-python-essential-math-for-data-science (1).ics
+linear-regression-with-python-essential-math-for-data-science.ics
+machine-learning-for-business-analytics-a-deep-dive-into-data-with-python (1).ics
+machine-learning-for-business-analytics-a-deep-dive-into-data-with-python.ics
+machine-learning-from-scratch.ics
+managed-machine-learning-systems-and-internet-of-things-2.ics
+managed-machine-learning-systems-and-internet-of-things.ics
+managing-a-toxic-work-environment.ics
+managing-stress.ics
+mastering-microsoft-excel-pivot-tables.ics
+mastering-pandas (1).ics
+mastering-pandas.ics
+microservices-architecture-and-design.ics
+microservices-caching-strategies.ics
+modern-java-exception-handling.ics
+modern-streaming-architectures (1).ics
+modern-streaming-architectures-2.ics
+modern-streaming-architectures-3.ics
+modern-streaming-architectures-4.ics
+modern-streaming-architectures-5.ics
+modern-streaming-architectures.ics
+monetizing-data.ics
+negotiation-fundamentals.ics
+object-oriented-programming-in-c-and-net-core.ics
+practical-data-cleaning-with-python.ics
+practical-docker-2.ics
+practical-docker.ics
+probabilistic-modeling-with-tensorflow-probability (1).ics
+probabilistic-modeling-with-tensorflow-probability (2).ics
+probabilistic-modeling-with-tensorflow-probability.ics
+probability-with-python-essential-math-for-data-science (1).ics
+probability-with-python-essential-math-for-data-science.ics
+product-management-in-90-minutes (1).ics
+product-management-in-90-minutes.ics
+programming-with-data-advanced-python-and-pandas (1).ics
+programming-with-data-advanced-python-and-pandas.ics
+programming-with-data-foundations-of-python-and-pandas.ics
+programming-with-python-beyond-the-basics.ics
+protecting-data-privacy-in-a-machine-learning-world.ics
+python-data-handling-a-deeper-dive (1).ics
+python-data-handling-a-deeper-dive.ics
+python-data-science-full-throttle-with-paul-deitel-introductory-ai-big-data-and-cloud-case-studies.ics
+python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies (1).ics
+python-data-science-full-throttle-with-paul-deitel-introductory-artificial-intelligence-ai-big-data-and-cloud-case-studies.ics
+python-powered-excel.ics
+python-the-next-level.ics
+quantitative-trading-with-python (1).ics
+quantitative-trading-with-python (2).ics
+quantitative-trading-with-python-2.ics
+quantitative-trading-with-python.ics
+real-time-data-foundations-kafka (1).ics
+real-time-data-foundations-kafka.ics
+real-time-data-foundations-spark.ics
+real-time-streaming-analytics-and-algorithms-for-ai-applications.ics
+red-hat-certified-system-administrator-rhcsa-crash-course.ics
+scrum-master-good-to-great.ics
+sentiment-analysis-for-chatbots-in-python.ics
+solid-principles-of-object-oriented-and-agile-design.ics
+spotlight-on-innovation-ai-explained-with-james-cham.ics
+spotlight-on-learning-from-failure-stablecoin-derisks-the-blockchain-landscape-with-wayne-chang.ics
+sql-data-wrangling-for-excel-users.ics
+sql-powered-excel-for-business-analytics (1).ics
+sql-powered-excel-for-business-analytics.ics
+statistical-literacy-linear-models-as-a-unifying-concept-using-r.ics
+statistics-and-hypothesis-testing-with-python-essential-math-for-data-science (1).ics
+statistics-and-hypothesis-testing-with-python-essential-math-for-data-science.ics
+structural-design-patterns-with-spring.ics
+testing-in-python.ics
+text-analysis-for-business-analytics-with-python.ics
+time-series-forecasting.ics
+tools-for-the-digital-transformation.ics
+understanding-data-science-algorithms-in-r-regression.ics
+visualization-and-presentation-of-data.ics
+visualization-in-python-with-matplotlib.ics
+visualizing-software-architecture-with-the-c4-model.ics
+what-you-need-to-know-about-data-science-2.ics
+what-you-need-to-know-about-data-science.ics
+working-with-dataclasses-in-python-37.ics

@@ -64,7 +64,7 @@ class Graph(object):
         visited.append(root)
         for n in self._graph[root]:
             self.dfs(n, visited)
-            print n
+            print(n)
 
     def bfs(self, root, visited):
         d = deque()
@@ -73,7 +73,7 @@ class Graph(object):
             current = d.pop()
             if current not in visited:
                 visited.append(current)
-                print current
+                print(current)
                 for n in self._graph[current]:
                     d.appendleft(n)
             

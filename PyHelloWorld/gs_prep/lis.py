@@ -1,3 +1,7 @@
+from measure_time import catchtime
+from functools import cache
+import random
+
 ### https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
 
 # A naive Python implementation of LIS problem
@@ -13,7 +17,8 @@ return two things:
  
 # global variable to store the maximum
 global maximum 
- 
+
+@cache 
 def _lis(arr, n):
     global maximum
  
@@ -38,7 +43,7 @@ def _lis(arr, n):
  
     return maxEndingHere
  
- 
+
 def lis(arr):
     global maximum
     n = len(arr)
@@ -47,7 +52,7 @@ def lis(arr):
     maximum = 1
  
     # The function _lis() stores its result in maximum
-    _lis(arr, n)
+    _lis(tuple(arr), n) # IAS: Making immutable to hash for @cache to work!
  
     return maximum
 
@@ -76,12 +81,46 @@ def dp_lis(arr):
         maximum = max(maximum, lis[i])
  
     return maximum
- 
+
+## https://leetcode.com/problems/longest-increasing-subsequence/discuss/74824/JavaPython-Binary-search-O(nlogn)-time-with-explanation
+# O(NlogN) solution - tails! Patience Sort 
+def lis_onlogn(nums):
+    tails = [0] * len(nums)
+    size = 0
+
+    for x in nums:
+        i, j = 0, size
+
+        while i != j:
+            m = (i + j) // 2
+            if tails[m] < x: # See Patience Sort PDF file:///Users/aniron/Downloads/LongestIncreasingSubsequence.pdf
+                             # - Basically, if the curr card face is less than
+                             # x[], we cannot place this card in this location, but on the right 
+                i = m + 1
+            else:
+                j = m
+
+        tails[i] = x  # overwrite the smallest card val that is on the top on which 
+                      # no other smaller card can be kept!
+        size = max(i + 1, size)
+
+    return size
+
 if __name__ == '__main__':
     arr1 = [3, 10, 2, 1, 20]
-    arr2 = [10, 22, 9, 33, 21, 50, 41, 60]
+    arr2 = [10, 22, 9, 33, 21, 50, 41, 60, 23, 234, 322, 343, 431, 756, 434, 834, 932, 985, 1000, 342, 1033]
+    arr = []
+    for i in range(100):
+        arr.append(random.randint(-10000, 10000))
+    print(arr)
 
-    print("Length of lis is ", lis(arr1))
-    print("Length of lis is ", dp_lis(arr1))
-    print("Length of lis is ", lis(arr2))
-    print("Length of lis is ", dp_lis(arr2))
+    # with catchtime():
+    #     print("Length of lis is ", lis(arr1))
+    # with catchtime():
+    #     print("Length of lis is ", dp_lis(arr1))
+    with catchtime():
+        print("Length of lis is O(NlogN) --> ", lis_onlogn(arr1))
+    with catchtime():
+        print("Length of lis is --> ", dp_lis(arr))
+    with catchtime():
+        print("Length of lis is @cache --> ", lis(arr))

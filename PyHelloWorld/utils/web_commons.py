@@ -215,9 +215,11 @@ def get_scrip_data(scrip):
     
     return data
 
-def get_screener_data():
+def get_screener_data(scrips=[]):
+    scrips = get_holding_quantities().keys() if not scrips else scrips
+    
     data_list = []
-    for scrip in get_holding_quantities().keys():
+    for scrip in scrips:
         data_list.append(get_scrip_data(scrip))
         sleep(1)
 

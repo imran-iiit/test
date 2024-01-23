@@ -1,5 +1,5 @@
 OUT_DIR = '/Users/aniron/Documents/Tracked/PyHelloWorld/docs/outputs/'
-HOLDING_FILE = '../docs/Holdings_28Dec23.xlsx'
+HOLDING_FILE = '../docs/Holdings_23Jan24.xlsx'
 ### TODO: Get this data from holdings.googlesheet directly
 
 NSE_BSE = {
@@ -30,9 +30,9 @@ NSE_BSE = {
             'RBA': 'RBA.BO'
 }
 
-BSE_NSE = {}
-for k, v in zip(NSE_BSE.values(), NSE_BSE.keys()):
-    BSE_NSE[k] = v
+# BSE_NSE = {}
+# for k, v in zip(NSE_BSE.values(), NSE_BSE.keys()):
+#     BSE_NSE[k] = v
 
 # QTYS = {
 #             'BAJFINANCE': 43,

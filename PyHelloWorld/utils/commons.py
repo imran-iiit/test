@@ -4,7 +4,8 @@ import datetime
 from pandas_datareader import data as pdr
 import yfinance as yfin
 
-from consts import NSE_BSE, BSE_NSE, OUT_DIR, HOLDING_FILE
+from consts import NSE_BSE, OUT_DIR, HOLDING_FILE
+
 
 def save_csv(df, f_prefix):
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -19,8 +20,8 @@ def read_xls(file_name, tab=0):
 
     return df
 
-def get_curr_prices_from_holdings(holdings_fname):
-    df = read_xls(holdings_fname)
+def get_curr_prices_from_holdings():
+    df = read_xls(HOLDING_FILE)
     df = df[['Symbol', 'Qty', 'Curr Price']]
     df = df[df['Qty'] > 0] 
     df = df.rename(columns={'Curr Price': 'currPrice', 'Symbol': 'index'})
@@ -48,7 +49,7 @@ def get_stock_data(stock_list=None,
                    interval='1d',
                    print_data=None):
     if not stock_list:
-        stock_list = list(NSE_BSE.values()) # ['BAJFINANCE.BO', 'DMART.NS']
+        stock_list = [NSE_BSE[n] for n in get_holding_quantities().keys()] # list(NSE_BSE.values()) # ['BAJFINANCE.BO', 'DMART.NS']
 
     # d = web.DataReader(stocks, 'yahoo', start, end)
     # d = data.DataReader("BAJFINANCE.BO",'yahoo', start='2021-09-10', end='2022-10-09')
@@ -58,11 +59,10 @@ def get_stock_data(stock_list=None,
     df = pdr.get_data_yahoo(stock_list, start=start, end=end, interval=interval) #['Adj Close']
     print(f'****** Got stock data between {start} and {end} *******')
     
-    print('********** ', df)
     if interval == '1wk':
         df = df.asfreq('W-FRI', method='pad')
     df = df['Adj Close']
-    df = df.rename(columns=BSE_NSE)
+    df = df.rename(columns={NSE_BSE[n]:n for n in get_holding_quantities().keys()})
 
     if print_data:
         print(df)

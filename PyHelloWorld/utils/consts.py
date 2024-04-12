@@ -1,11 +1,11 @@
 OUT_DIR = '/Users/aniron/Documents/Tracked/PyHelloWorld/docs/outputs/'
-HOLDING_FILE = '../docs/Holdings_23Jan24.xlsx'
+HOLDING_FILE = '../docs/Holdings_7Mar24.xlsx'
 ### TODO: Get this data from holdings.googlesheet directly
 
 NSE_BSE = {
             'BAJFINANCE': 'BAJFINANCE.BO',
             'DMART': 'DMART.NS',
-            'DEEPAKNTR': 'DEEPAKNI.BO',
+            'DEEPAKNTR': 'DEEPAKNTR.BO',
             'SONACOMS': 'SONACOMS.BO',
             'POLYCAB': 'POLYCAB.BO',
             'FINEORG': 'FINEORG.BO',
@@ -15,7 +15,7 @@ NSE_BSE = {
             'AFFLE': 'AFFLE.BO',
             'HAPPSTMNDS': 'HAPPSTMNDS.BO',
             'TATACHEM': 'TATACHEM.BO',
-            'RAJRATAN': 'RAJGLOWIR.BO',
+            'RAJRATAN': 'RAJRATAN.BO',
             'PRINCEPIPE': 'PRINCEPIPE.BO',
             'IONEXCHANG': 'IONEXCHANG.BO',
             'BERGEPAINT': 'BERGEPAINT.BO',

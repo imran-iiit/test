@@ -1,5 +1,5 @@
 OUT_DIR = '/Users/aniron/Documents/Tracked/PyHelloWorld/docs/outputs/'
-HOLDING_FILE = '../docs/Holdings_7Mar24.xlsx'
+HOLDING_FILE = '../docs/Holdings_26May24.xlsx'
 ### TODO: Get this data from holdings.googlesheet directly
 
 NSE_BSE = {

@@ -31,10 +31,11 @@ def get_curr_prices_from_holdings():
 
 def get_holding_quantities():
     df = read_xls(HOLDING_FILE, tab=0)
-    df = df[['Symbol', 'Qty']]
-    df = df[df['Qty'] > 0]
-    dir(df)
-    # df.to_json()
+    df = df[['Symbol', 'Qty', 'Curr Val']]
+    df = df.sort_values('Curr Val', ascending=False)
+    df = df[df['Qty'] > 0][['Symbol', 'Qty']]
+#     dir(df)
+#     df.to_json()
     list(df.values)
     df_dict = df.to_dict('list') # https://stackoverflow.com/questions/52547805/how-to-convert-dataframe-to-dictionary-in-pandas-without-index
     qtys = {}
@@ -91,7 +92,7 @@ def min_consecutive_sum_kadane(arr, dates=None):
             start = dates[start].date().strftime('%d%b%Y')
             end = dates[end].date().strftime('%d%b%Y')
 
-    return max_so_far * -1, start, end
+    return [max_so_far * -1, start, end]
 
 
 

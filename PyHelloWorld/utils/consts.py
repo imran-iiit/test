@@ -1,5 +1,5 @@
 OUT_DIR = '/Users/imran/Documents/apps/docs/outputs/'
-HOLDING_FILE = '~/Documents/apps/docs/Holdings_20Feb25.xlsx'
+HOLDING_FILE = '~/Documents/apps/docs/Holdings_5Aug25.xlsx'
 ### TODO: Get this data from holdings.googlesheet directly
 
 NSE_BSE = {

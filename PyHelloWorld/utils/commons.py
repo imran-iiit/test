@@ -33,6 +33,7 @@ def get_holding_quantities():
     df = read_xls(HOLDING_FILE, tab=0)
     df = df[['Symbol', 'Qty', 'Curr Val']]
     df = df.sort_values('Curr Val', ascending=False)
+    df = df[pd.to_numeric(df['Qty'], errors='coerce').notnull()] # Filter non numeric values in Qty col
     df = df[df['Qty'] > 0][['Symbol', 'Qty']]
 #     dir(df)
 #     df.to_json()

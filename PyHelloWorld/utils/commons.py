@@ -41,7 +41,8 @@ def get_holding_quantities():
     df_dict = df.to_dict('list') # https://stackoverflow.com/questions/52547805/how-to-convert-dataframe-to-dictionary-in-pandas-without-index
     qtys = {}
     for c, v in zip(df_dict['Symbol'], df_dict['Qty']):
-        qtys[c] = v
+        if c != 'NIFTYBEES':
+            qtys[c] = v
         
     return qtys
 
